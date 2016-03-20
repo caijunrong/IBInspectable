@@ -15,6 +15,10 @@
 		04EE885F1C9D907B003A2091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EE885D1C9D907B003A2091 /* LaunchScreen.storyboard */; };
 		04EE886A1C9D907B003A2091 /* TestIBInspectableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE88691C9D907B003A2091 /* TestIBInspectableTests.m */; };
 		04EE88751C9D907B003A2091 /* TestIBInspectableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE88741C9D907B003A2091 /* TestIBInspectableUITests.m */; };
+		04EE88851C9E7612003A2091 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE88831C9E7612003A2091 /* InitialViewController.m */; };
+		04EE88861C9E7612003A2091 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EE88841C9E7612003A2091 /* InitialViewController.xib */; };
+		04EE888B1C9E7830003A2091 /* CustomShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE888A1C9E7830003A2091 /* CustomShapeView.m */; };
+		04EE888E1C9E7BF2003A2091 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE888D1C9E7BF2003A2091 /* CustomButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		04EE88701C9D907B003A2091 /* TestIBInspectableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestIBInspectableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EE88741C9D907B003A2091 /* TestIBInspectableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestIBInspectableUITests.m; sourceTree = "<group>"; };
 		04EE88761C9D907B003A2091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EE88821C9E7612003A2091 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		04EE88831C9E7612003A2091 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		04EE88841C9E7612003A2091 /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		04EE88891C9E7830003A2091 /* CustomShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomShapeView.h; sourceTree = "<group>"; };
+		04EE888A1C9E7830003A2091 /* CustomShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomShapeView.m; sourceTree = "<group>"; };
+		04EE888C1C9E7BF2003A2091 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		04EE888D1C9E7BF2003A2091 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +112,12 @@
 		04EE884E1C9D907A003A2091 /* TestIBInspectable */ = {
 			isa = PBXGroup;
 			children = (
-				04EE88521C9D907B003A2091 /* AppDelegate.h */,
-				04EE88531C9D907B003A2091 /* AppDelegate.m */,
-				04EE88551C9D907B003A2091 /* ViewController.h */,
-				04EE88561C9D907B003A2091 /* ViewController.m */,
-				04EE88581C9D907B003A2091 /* Main.storyboard */,
+				04EE888F1C9E7C02003A2091 /* CustomButton */,
+				04EE88881C9E77D7003A2091 /* CustomShapeView */,
+				04EE88871C9E761F003A2091 /* Normal */,
+				04EE88821C9E7612003A2091 /* InitialViewController.h */,
+				04EE88831C9E7612003A2091 /* InitialViewController.m */,
+				04EE88841C9E7612003A2091 /* InitialViewController.xib */,
 				04EE885B1C9D907B003A2091 /* Assets.xcassets */,
 				04EE885D1C9D907B003A2091 /* LaunchScreen.storyboard */,
 				04EE88601C9D907B003A2091 /* Info.plist */,
@@ -138,6 +150,36 @@
 				04EE88761C9D907B003A2091 /* Info.plist */,
 			);
 			path = TestIBInspectableUITests;
+			sourceTree = "<group>";
+		};
+		04EE88871C9E761F003A2091 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				04EE88581C9D907B003A2091 /* Main.storyboard */,
+				04EE88521C9D907B003A2091 /* AppDelegate.h */,
+				04EE88531C9D907B003A2091 /* AppDelegate.m */,
+				04EE88551C9D907B003A2091 /* ViewController.h */,
+				04EE88561C9D907B003A2091 /* ViewController.m */,
+			);
+			name = Normal;
+			sourceTree = "<group>";
+		};
+		04EE88881C9E77D7003A2091 /* CustomShapeView */ = {
+			isa = PBXGroup;
+			children = (
+				04EE88891C9E7830003A2091 /* CustomShapeView.h */,
+				04EE888A1C9E7830003A2091 /* CustomShapeView.m */,
+			);
+			name = CustomShapeView;
+			sourceTree = "<group>";
+		};
+		04EE888F1C9E7C02003A2091 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				04EE888C1C9E7BF2003A2091 /* CustomButton.h */,
+				04EE888D1C9E7BF2003A2091 /* CustomButton.m */,
+			);
+			name = CustomButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +288,7 @@
 				04EE885F1C9D907B003A2091 /* LaunchScreen.storyboard in Resources */,
 				04EE885C1C9D907B003A2091 /* Assets.xcassets in Resources */,
 				04EE885A1C9D907B003A2091 /* Main.storyboard in Resources */,
+				04EE88861C9E7612003A2091 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EE888E1C9E7BF2003A2091 /* CustomButton.m in Sources */,
 				04EE88571C9D907B003A2091 /* ViewController.m in Sources */,
 				04EE88541C9D907B003A2091 /* AppDelegate.m in Sources */,
 				04EE88511C9D907B003A2091 /* main.m in Sources */,
+				04EE88851C9E7612003A2091 /* InitialViewController.m in Sources */,
+				04EE888B1C9E7830003A2091 /* CustomShapeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
